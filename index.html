@@ -31,13 +31,40 @@
         // Same function
         // jQuery
 
+        // $(document).ready(function () {
+        //     $("#test").click(function () {
+        //         alert("Clicked");
+        //         $(this).hide();
+        //     });
+        // });
+
+    </script>
+
+    <p id="p1">Hover me!</p>
+    <p id="p2">Click me!</p>
+    <p id="p3">Double Click me!</p>
+    <p id="p4">Leave me alone!</p>
+    <p>Press[enter]</p>
+
+    <script>
         $(document).ready(function () {
-            $("#test").click(function () {
-                alert("Clicked");
+            $("#p1").hover(function () {
                 $(this).hide();
             });
-        });
 
+            $("#p2").click(function () {
+                $(this).hide();
+            });
+
+            $("#p3").dbclick(function(){
+                $(this).hide();
+            });
+
+            $("#p4").mouseout(function(){
+                $(this).hide();
+            });
+
+        });
     </script>
 
 </body>
