@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define the character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the jQuery library from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Include an external JavaScript file -->
+    <script src="./js/main.js"></script>
+    <!-- Set the title of the webpage -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Display a paragraph element with the id "test" -->
+    <p id="test">This is a paragraph!</p>
+
+    <script>
+        // JavaScript code start
+        // Add a click event handler to the element with id "test"
+        // document.getElementById("test").onclick = function () {
+        //     // Display an alert when the paragraph is clicked
+        //     alert("Clicked");
+        // }
+        //Javascript end
+
+        // Same function
+        // jQuery
+
+        $(document).ready(function () {
+            $("#test").click(function () {
+                alert("Clicked");
+                $(this).hide();
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
